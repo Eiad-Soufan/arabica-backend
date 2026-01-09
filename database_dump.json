@@ -1,0 +1,902 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$kAfrFJ9JyOhpyzL0M5XT24$hn7z+eVanC/tVci0q6LOzmD1NPlMQII/6s4//7ZHyAA=",
+    "last_login": "2026-01-01T10:01:14.976Z",
+    "is_superuser": true,
+    "username": "ArabicaAdmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "arabicamymail@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-01T09:43:53.647Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "89zv1i4ss87j1klw7cl4e20wc8646rhr",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hAoFqhL956BfDofqRpISrsy3t026UIzu3lv5i0CrUsOa-M5TBAXocXpt4s0PrnsAA8q9yrHWpZ5inJX5EGbvFXw63q4fweZWt7WqrNG0egJxMZaBRiLM7NnhQTnCH1nUkodmKI2GujT4BXZwTneIj5fCHk4-A:1vbFUZ:YuLrrijzN5BS67HvNxqslyKUtSNSeJK_fDirOsYvKmM",
+    "expire_date": "2026-01-15T10:01:15.038Z"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 1,
+  "fields": {
+    "name_ar": "المقبلات",
+    "name_en": "Appetizers",
+    "name_ms": "Pembuka selera",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767275075/e351e253-9362-4830-9a63-62471dea2de7.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 2,
+  "fields": {
+    "name_ar": "السلطات و الشوربات",
+    "name_en": "Salads & Soups",
+    "name_ms": "Salad dan Sup",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767276316/presentation_7e349e18-661d-4904-8707-8d6acbe48576_wnouez.jpg",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 3,
+  "fields": {
+    "name_ar": "وجبات جماعية",
+    "name_en": "Group Sets",
+    "name_ms": "Set Berkumpulan",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277104/75939818-7c9c-4204-87ee-68a84f87ab22.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 4,
+  "fields": {
+    "name_ar": "خيمة اللحوم",
+    "name_en": "Meats Tent",
+    "name_ms": "Khemah Daging",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277252/4cd3e705-7c00-4209-9ad9-64a97186448b.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 5,
+  "fields": {
+    "name_ar": "أطباق نباتية",
+    "name_en": "Vegetarian",
+    "name_ms": "Hidangan Vegetarian",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277357/3f349489-c094-4630-b2ac-492a1941d429.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 6,
+  "fields": {
+    "name_ar": "وجبات الأطفال",
+    "name_en": "Kids Sets",
+    "name_ms": "Hidangan Kanak-kanak",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277475/57c304a9-d4fb-4376-ba32-876f6703ace1.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 7,
+  "fields": {
+    "name_ar": "الأرز",
+    "name_en": "Rice",
+    "name_ms": "Nasi",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277554/0e7f4aea-a2ff-4dd7-96d0-f0a893ee5367.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 8,
+  "fields": {
+    "name_ar": "الأطباق الساخنة",
+    "name_en": "Hot Dishes",
+    "name_ms": "Hidangan Panas",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277657/6dd34895-48e6-418e-98bf-54ebb5a95846.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 9,
+  "fields": {
+    "name_ar": "مشاوي أربيكا",
+    "name_en": "Arabica BBQ",
+    "name_ms": "Panggang Arabica",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277763/b9b5a708-0471-438b-807f-660f8155c2b5.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 10,
+  "fields": {
+    "name_ar": "شاورما",
+    "name_en": "Shawarma",
+    "name_ms": "Shawarma",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767277908/7431983a-c4ff-4559-be41-69567973f99c.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 11,
+  "fields": {
+    "name_ar": "سندويشات",
+    "name_en": "Wraps",
+    "name_ms": "Sandwic Gulung",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278022/0701bd84-5a3d-4657-ae96-a7f395230bb5.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 12,
+  "fields": {
+    "name_ar": "وجبات غربية",
+    "name_en": "Western Food",
+    "name_ms": "Makanan Barat",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278204/5538a3ae-7a8f-4fd9-ac00-4e92fd3fbc00.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 13,
+  "fields": {
+    "name_ar": "العصائر الطبيعية و كوكتيل الحليب",
+    "name_en": "Fresh Juices & Milkshake",
+    "name_ms": "Jus Segar & Milkshake",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278302/c3847821-fa2e-4c57-b3ce-3d3e4fd9894a.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 14,
+  "fields": {
+    "name_ar": "الحلويات",
+    "name_en": "Desserts",
+    "name_ms": "Pencuci Mulut",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278386/8748929e-77dd-4b94-afd5-ae791cbd7c05.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 15,
+  "fields": {
+    "name_ar": "مشاريب",
+    "name_en": "Drinks",
+    "name_ms": "Minuman",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278479/7f83342b-0c5e-464e-9c51-ca48140bfd10.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 16,
+  "fields": {
+    "name_ar": "الإضافات",
+    "name_en": "Add-Ons",
+    "name_ms": "Tambahan",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767278555/90046ffc-1279-4ba8-b775-497046f5d5e0.png",
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name_ar": "حمص",
+    "name_en": "Hummus",
+    "name_ms": "Hummus",
+    "description_ar": "حمص ناعم محضّر من حبوب الحمص المسلوقة والمطحونة بعناية، ممزوج بالطحينة وعصير الليمون ولمسة من الثوم، ومزيّن بزيت الزيتون البِكر وحبات الحمص. يُقدَّم مع خبز عربي طازج ليمنحك طعمًا شرقياً أصيلاً وغنياً.",
+    "description_en": "Smooth and creamy hummus made from finely blended chickpeas, mixed with tahini, fresh lemon juice, and a hint of garlic. Topped with extra virgin olive oil and whole chickpeas, and served with freshly baked Arabic bread for an authentic Middle Eastern experience.",
+    "description_ms": "Hummus yang lembut dan berkrim, diperbuat daripada kacang kuda yang dikisar halus bersama tahini, jus lemon segar dan sedikit bawang putih. Dihidangkan dengan minyak zaitun dara dan biji kacang kuda di atasnya, serta roti Arab segar untuk rasa Timur Tengah yang asli.",
+    "price": "13.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A1_qzoitz.png",
+    "is_recommended": false,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name_ar": "صحن فلافل ) 5 حبات (",
+    "name_en": "Falafel (5 pcs)",
+    "name_ms": "Hidangan Falafel (5 Keping)",
+    "description_ar": "صحن فلافل شهي مكوّن من خمس حبات فلافل مقرمشة من الخارج وطريّة من الداخل، محضّرة من الحمص المطحون والمتبّل بالأعشاب والتوابل العربية. يُقدَّم مع الحمص، اللبن الزبادي، الخضار الطازجة، وخبز عربي طازج لوجبة نباتية متكاملة وغنية بالنكهة.",
+    "description_en": "A delicious falafel platter featuring five crispy-on-the-outside, soft-on-the-inside falafel pieces made from seasoned ground chickpeas and Arabic spices. Served with hummus, yogurt sauce, fresh vegetables, and warm Arabic bread for a wholesome vegetarian meal.",
+    "description_ms": "Hidangan falafel yang lazat terdiri daripada lima bebola falafel rangup di luar dan lembut di dalam, diperbuat daripada kacang kuda kisar yang dibumbui dengan herba dan rempah Timur Tengah. Dihidangkan bersama hummus, sos yogurt, sayur-sayuran segar dan roti Arab untuk hidangan vegetarian yang lengkap dan berperisa.",
+    "price": "18.80",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A5_rcktfd.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name_ar": "بابا غنوج",
+    "name_en": "Baba Gannouj",
+    "name_ms": "Baba Ghanoush",
+    "description_ar": "بابا غنوج شهي محضّر من الباذنجان المشوي والمهرس، ممزوج بالطحينة وعصير الليمون ولمسة خفيفة من الثوم، ومزيّن بزيت الزيتون البِكر. يُقدَّم مع خبز عربي طازج ليمنحك نكهة شرقية مدخنة وغنية.",
+    "description_en": "A classic Baba Ghanoush made from fire-roasted eggplant blended with tahini, fresh lemon juice, and a hint of garlic. Finished with extra virgin olive oil and served with warm Arabic bread for a rich, smoky Middle Eastern flavor.",
+    "description_ms": "Baba Ghanoush klasik yang diperbuat daripada terung panggang yang dikisar bersama tahini, jus lemon segar dan sedikit bawang putih. Dihidangkan dengan minyak zaitun dara serta roti Arab segar untuk rasa Timur Tengah yang berasap dan kaya.",
+    "price": "14.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A2_ruolpc.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name_ar": "متبل",
+    "name_en": "Mutabbal",
+    "name_ms": "Mutabbal",
+    "description_ar": "متبل شهي محضّر من الباذنجان المشوي والمطحون، ممزوج بالطحينة وعصير الليمون والثوم، مع لمسة من زيت الزيتون البِكر. يُقدَّم مع خبز عربي طازج ليمنحك نكهة شرقية غنية ومدخّنة.",
+    "description_en": "A traditional Mutabbal made from roasted eggplant blended with tahini, fresh lemon juice, and garlic. Drizzled with extra virgin olive oil and served with warm Arabic bread for a rich and smoky Middle Eastern taste.",
+    "description_ms": "Mutabbal tradisional yang diperbuat daripada terung panggang yang dikisar bersama tahini, jus lemon segar dan bawang putih. Dihidangkan dengan minyak zaitun dara serta roti Arab segar untuk rasa Timur Tengah yang kaya dan berasap.",
+    "price": "14.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A3_tg9uyh.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name_ar": "حمص مع لحم الغنم",
+    "name_en": "Hummus w/Lamb",
+    "name_ms": "Hummus dengan Daging Kambing",
+    "description_ar": "حمص كريمي ناعم محضّر من الحمص المطحون مع الطحينة وعصير الليمون، ومُزيّن بلحم غنم مفروم مطهوّ مع البهارات العربية، ولمسة من زيت الزيتون البِكر. يُقدَّم مع خبز عربي طازج لوجبة غنية ومشبعة.",
+    "description_en": "Creamy hummus made from finely blended chickpeas, tahini, and fresh lemon juice, topped with seasoned minced lamb cooked in traditional Arabic spices. Finished with extra virgin olive oil and served with warm Arabic bread for a rich and satisfying dish.",
+    "description_ms": "Hummus berkrim yang diperbuat daripada kacang kuda kisar bersama tahini dan jus lemon segar, dihidangkan dengan daging kambing cincang yang dimasak dengan rempah Arab. Dihias dengan minyak zaitun dara dan disajikan bersama roti Arab segar untuk hidangan yang lazat dan mengenyangkan.",
+    "price": "19.50",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A4_navwgs.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name_ar": "بطاطا مقلية",
+    "name_en": "French Fries",
+    "name_ms": "Kentang Goreng",
+    "description_ar": "بطاطا مقلية ذهبية ومقرمشة من الخارج وطريّة من الداخل، تُحضَّر طازجة وتُقدَّم ساخنة مع رشة ملح، لتكون طبقًا جانبيًا مثاليًا يرافق جميع الوجبات.",
+    "description_en": "Golden, crispy French fries fried to perfection, crunchy on the outside and soft on the inside. Served hot with a light sprinkle of salt, making it the perfect side dish for any meal.",
+    "description_ms": "Kentang goreng keemasan yang rangup di luar dan lembut di dalam, digoreng segar dan dihidangkan panas dengan taburan garam ringan. Hidangan sampingan yang sempurna untuk menemani sebarang sajian.",
+    "price": "8.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A6_kmffoc.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "name_ar": "شكشوكة (خبز أو أرز)",
+    "name_en": "Shakshoukah ( w/ Bread or Rice )",
+    "name_ms": "Shakshoukah (dengan Roti atau Nasi)",
+    "description_ar": "شكشوكة تقليدية محضّرة من البيض المطهوّ في صلصة غنية من الطماطم الطازجة، الفلفل، والبصل مع البهارات العربية. تُقدَّم ساخنة مع اختيارك من الخبز العربي الطازج أو الأرز الأبيض لوجبة مشبعة ومليئة بالنكهة.",
+    "description_en": "A classic Shakshoukah made with eggs gently cooked in a rich tomato sauce with fresh peppers, onions, and aromatic Middle Eastern spices. Served hot with your choice of Arabic bread or steamed rice for a hearty and flavorful meal.",
+    "description_ms": "Shakshoukah tradisional yang disediakan daripada telur yang dimasak perlahan dalam sos tomato yang kaya bersama lada segar, bawang dan rempah Timur Tengah. Dihidangkan panas dengan pilihan roti Arab atau nasi putih untuk hidangan yang mengenyangkan dan berperisa.",
+    "price": "15.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A7_wu7zed.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "name_ar": "سمبوسة جبن ( 4 حبات )",
+    "name_en": "Cheese Samosa ( 4 Pcs )",
+    "name_ms": "Samosa Keju (4 Keping)",
+    "description_ar": "سمبوسة جبن مقرمشة محشوة بخليط غني من الجبن الذائب، ملفوفة بعجينة ذهبية ومقلية حتى الكمال. تُقدَّم أربع حبات ساخنة لتكون مقبلات لذيذة وخفيفة تناسب جميع الأذواق.",
+    "description_en": "Crispy cheese samosas filled with a rich blend of melted cheese, wrapped in golden pastry and fried to perfection. Served as four pieces, making a delicious and satisfying appetizer.",
+    "description_ms": "Samosa keju rangup yang diisi dengan campuran keju cair yang lazat, dibalut dengan kulit pastri keemasan dan digoreng sempurna. Dihidangkan dalam empat keping sebagai pembuka selera yang sedap dan ringan.",
+    "price": "9.90",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A8_wmkff6.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.product",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "name_ar": "كبة مقلية (4 حبات)",
+    "name_en": "Fried Kibbeh (4 pcs)",
+    "name_ms": "Kibbeh Goreng (4 Keping)",
+    "description_ar": "كبة مقلية ذهبية ومقرمشة محشوة بخليط شهي من اللحم المفروم المتبّل مع البصل والصنوبر، ومغلفة بطبقة ناعمة من البرغل. تُقدَّم أربع حبات ساخنة كمقبلات عربية تقليدية غنية بالنكهة.",
+    "description_en": "Golden fried kibbeh with a crispy outer shell, filled with seasoned minced meat, onions, and pine nuts, wrapped in a fine bulgur crust. Served as four pieces, making a classic and flavorful Middle Eastern appetizer.",
+    "description_ms": "Kibbeh goreng keemasan yang rangup di luar, diisi dengan daging cincang berperisa bersama bawang dan kacang pine, disaluti lapisan bulgur halus. Dihidangkan dalam empat keping sebagai pembuka selera tradisional Timur Tengah yang kaya rasa.",
+    "price": "19.50",
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767254226/A9_p65lb6.png",
+    "is_recommended": true,
+    "status": "published"
+  }
+},
+{
+  "model": "core.heroimage",
+  "pk": 1,
+  "fields": {
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767274755/PIX13_e1bxiy.webp",
+    "status": "published"
+  }
+},
+{
+  "model": "core.heroimage",
+  "pk": 2,
+  "fields": {
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767274742/unnamed_bhbtpq.webp",
+    "status": "published"
+  }
+},
+{
+  "model": "core.heroimage",
+  "pk": 3,
+  "fields": {
+    "image_url": "https://res.cloudinary.com/dbwjopbcf/image/upload/f_auto,q_auto,w_800/v1767274737/2025-11-12_lug7ft.webp",
+    "status": "published"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-01-01T13:40:30.424Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "heroimage"
+    ],
+    "object_id": "1",
+    "object_repr": "Hero Image #1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-01-01T13:40:37.629Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "heroimage"
+    ],
+    "object_id": "2",
+    "object_repr": "Hero Image #2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-01-01T13:40:43.366Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "heroimage"
+    ],
+    "object_id": "3",
+    "object_repr": "Hero Image #3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-01-01T13:45:41.107Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Appetizers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-01-01T13:48:39.034Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Hummus",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-01-01T13:50:20.138Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Falafel (5 pcs)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-01-01T13:52:41.250Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "Baba Gannouj",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-01-01T13:53:53.239Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Mutabbal",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-01-01T13:55:21.619Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "Hummus w/Lamb",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-01-01T13:57:05.945Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "6",
+    "object_repr": "French Fries",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-01-01T13:58:24.893Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "7",
+    "object_repr": "Shakshoukah ( w/ Bread or Rice )",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-01-01T13:59:53.068Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "8",
+    "object_repr": "Cheese Samosa ( 4 Pcs )",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-01-01T14:01:15.950Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "product"
+    ],
+    "object_id": "9",
+    "object_repr": "Fried Kibbeh (4 pcs)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-01-01T14:06:15.449Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "السلطات و الشوربات",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-01-01T14:06:29.639Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "Salads & Soups",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name ar\", \"Name en\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-01-01T14:18:45.311Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Group Sets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-01-01T14:21:13.210Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Meats Tent",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-01-01T14:23:06.731Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "5",
+    "object_repr": "Vegetarian",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-01-01T14:24:58.947Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "6",
+    "object_repr": "Kids Sets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-01-01T14:26:25.440Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "7",
+    "object_repr": "Rice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-01-01T14:28:01.089Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "8",
+    "object_repr": "Hot Dishes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-01-01T14:29:42.791Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "9",
+    "object_repr": "Arabica BBQ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-01-01T14:32:05.939Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "10",
+    "object_repr": "Shawarma",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-01-01T14:34:07.607Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "11",
+    "object_repr": "Wraps",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-01-01T14:37:27.643Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "12",
+    "object_repr": "Western Food",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-01-01T14:38:58.584Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "13",
+    "object_repr": "Fresh Juices & Milkshake",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-01-01T14:40:16.450Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "14",
+    "object_repr": "Desserts",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-01-01T14:41:45.780Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "15",
+    "object_repr": "Drinks",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-01-01T14:43:00.473Z",
+    "user": [
+      "ArabicaAdmin"
+    ],
+    "content_type": [
+      "core",
+      "category"
+    ],
+    "object_id": "16",
+    "object_repr": "Add-Ons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
