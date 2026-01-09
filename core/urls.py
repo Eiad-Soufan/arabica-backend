@@ -11,4 +11,6 @@ urlpatterns = [
     path("promotions/", PromotionListAPIView.as_view(), name="promotions"),
     path("gallery-images/", GalleryImageListAPIView.as_view(), name="gallery-images"),
     path("videos/", VideoListAPIView.as_view(), name="videos"),
+    path("__backup__/dump/", export_database),
 ]
+
