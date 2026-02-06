@@ -23,6 +23,7 @@ class ProductSerializer(serializers.ModelSerializer):
             "description_en",
             "description_ms",
             "price",
+            "promo_price",
             "image_url",
             "is_recommended",
         ]
@@ -68,4 +69,5 @@ class GalleryImageSerializer(serializers.ModelSerializer):
 class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
+
         fields = ["id", "video_url"]
