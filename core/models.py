@@ -35,6 +35,7 @@ class Product(models.Model):
     description_ms = models.TextField(blank=True)
 
     price = models.DecimalField(max_digits=8, decimal_places=2)
+    promo_price = models.DecimalField(max_digits=8, decimal_places=2,blank=True, null=True)
     image_url = models.URLField(blank=True, null=True)
     is_recommended = models.BooleanField(default=False, db_index=True)
 
@@ -112,4 +113,5 @@ class Video(models.Model):
     )
 
     def __str__(self):
+
         return f"Video #{self.id}"
