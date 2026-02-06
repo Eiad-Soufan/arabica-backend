@@ -24,6 +24,7 @@ class ProductAdmin(admin.ModelAdmin):
         "name_en",
         "category",
         "price",
+        "promo_price",
         "is_recommended",
         "status",
     )
@@ -60,3 +61,4 @@ class GalleryImageAdmin(admin.ModelAdmin):
 class VideoAdmin(admin.ModelAdmin):
     list_display = ("id", "video_url", "status")
     list_filter = ("status",)
+
