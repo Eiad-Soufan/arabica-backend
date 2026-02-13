@@ -115,3 +115,53 @@ class Video(models.Model):
     def __str__(self):
 
         return f"Video #{self.id}"
+
+
+
+
+class PromotionCategory(models.Model):
+    name_ar = models.CharField(max_length=150)
+    name_en = models.CharField(max_length=150)
+    name_ms = models.CharField(max_length=150)
+
+    image_url = models.URLField(blank=True, null=True)
+
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default="published"
+    )
+
+    def __str__(self):
+        return self.name_en
+
+
+class PromotionProduct(models.Model):
+    category = models.ForeignKey(
+        PromotionCategory,
+        related_name="products",
+        on_delete=models.CASCADE
+    )
+
+    name_ar = models.CharField(max_length=150)
+    name_en = models.CharField(max_length=150)
+    name_ms = models.CharField(max_length=150)
+
+    description_ar = models.TextField(blank=True)
+    description_en = models.TextField(blank=True)
+    description_ms = models.TextField(blank=True)
+
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    promo_price = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
+    image_url = models.URLField(blank=True, null=True)
+    is_recommended = models.BooleanField(default=False, db_index=True)
+
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default="published"
+    )
+
+    def __str__(self):
+        return self.name_en
+
