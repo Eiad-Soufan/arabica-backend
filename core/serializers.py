@@ -71,3 +71,36 @@ class VideoSerializer(serializers.ModelSerializer):
         model = Video
 
         fields = ["id", "video_url"]
+
+
+class PromotionCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PromotionCategory
+        fields = [
+            "id",
+            "name_ar",
+            "name_en",
+            "name_ms",
+            "image_url",
+        ]
+
+
+class PromotionProductSerializer(serializers.ModelSerializer):
+    category_id = serializers.IntegerField(source="category.id", read_only=True)
+
+    class Meta:
+        model = PromotionProduct
+        fields = [
+            "id",
+            "category_id",
+            "name_ar",
+            "name_en",
+            "name_ms",
+            "description_ar",
+            "description_en",
+            "description_ms",
+            "price",
+            "promo_price",
+            "image_url",
+            "is_recommended",
+        ]
