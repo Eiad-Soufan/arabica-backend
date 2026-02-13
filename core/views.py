@@ -121,3 +121,31 @@ class VideoListAPIView(ListAPIView):
     def get_queryset(self):
 
         return Video.objects.filter(status="published").order_by("id")
+
+
+
+class PromotionCategoryListAPIView(ListAPIView):
+    serializer_class = PromotionCategorySerializer
+
+    def get_queryset(self):
+        return PromotionCategory.objects.filter(status="published").order_by("id")
+
+
+class PromotionProductListAPIView(ListAPIView):
+    serializer_class = PromotionProductSerializer
+    pagination_class = StandardResultsSetPagination
+
+    def get_queryset(self):
+        return PromotionProduct.objects.filter(status="published").order_by("id")
+
+
+class PromotionCategoryProductsListAPIView(ListAPIView):
+    serializer_class = PromotionProductSerializer
+    pagination_class = StandardResultsSetPagination
+
+    def get_queryset(self):
+        category_id = self.kwargs["category_id"]
+        return PromotionProduct.objects.filter(
+            status="published",
+            category_id=category_id
+        ).order_by("id")
