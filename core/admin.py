@@ -7,6 +7,8 @@ from .models import (
     Promotion,
     GalleryImage,
     Video,
+    PromotionCategory,      # ✅ NEW
+    PromotionProduct,       # ✅ NEW
 )
 
 
@@ -62,3 +64,25 @@ class VideoAdmin(admin.ModelAdmin):
     list_display = ("id", "video_url", "status")
     list_filter = ("status",)
 
+
+@admin.register(PromotionCategory)
+class PromotionCategoryAdmin(admin.ModelAdmin):
+    list_display = ("id", "name_en", "status")
+    list_filter = ("status",)
+    search_fields = ("name_ar", "name_en", "name_ms")
+
+
+@admin.register(PromotionProduct)
+class PromotionProductAdmin(admin.ModelAdmin):
+    list_display = (
+        "id",
+        "name_en",
+        "category",
+        "price",
+        "promo_price",
+        "is_recommended",
+        "status",
+    )
+    list_filter = ("status", "is_recommended", "category")
+    search_fields = ("name_ar", "name_en", "name_ms")
+    list_editable = ("is_recommended", "status")
