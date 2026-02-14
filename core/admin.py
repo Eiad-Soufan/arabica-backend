@@ -85,5 +85,6 @@ class PromotionProductAdmin(admin.ModelAdmin):
     )
     list_filter = ("status", "category")
     search_fields = ("name_ar", "name_en", "name_ms")
-    list_editable = ("status")
+
+
 
