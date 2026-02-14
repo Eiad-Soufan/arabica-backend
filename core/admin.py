@@ -80,9 +80,10 @@ class PromotionProductAdmin(admin.ModelAdmin):
         "category",
         "price",
         "promo_price",
-        "is_recommended",
+        #"is_recommended",
         "status",
     )
-    list_filter = ("status", "is_recommended", "category")
+    list_filter = ("status", "category")
     search_fields = ("name_ar", "name_en", "name_ms")
-    list_editable = ("is_recommended", "status")
+    list_editable = ("status")
+
