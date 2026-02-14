@@ -41,10 +41,6 @@ class HeroImageAdmin(admin.ModelAdmin):
     list_filter = ("status",)
 
 
-@admin.register(SmallBanner)
-class SmallBannerAdmin(admin.ModelAdmin):
-    list_display = ("id", "image_url", "status")
-    list_filter = ("status",)
 
 
 @admin.register(Promotion)
@@ -85,6 +81,7 @@ class PromotionProductAdmin(admin.ModelAdmin):
     )
     list_filter = ("status", "category")
     search_fields = ("name_ar", "name_en", "name_ms")
+
 
 
 
